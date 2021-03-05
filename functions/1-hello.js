@@ -1,11 +1,13 @@
 //domain/.netlify/functions/1-hello
-exports.handler = (event, context, cb) => {
 
-    cb(null,
-        {statusCode: 200, body: 'Hello world!'})
+const person = { name: 'john'}
 
-    //return {
-    //    statusCode: 200,
-    //    body: 'Our First Netlify Function Example',
-    //}
+exports.handler = async (event, context, cb) => {
+
+    //cb(null,{statusCode: 200, body: 'Hello world!'})
+    //console.log(context);
+    return {
+        statusCode: 200,
+        body: JSON.stringify(person),
+    }
 }
