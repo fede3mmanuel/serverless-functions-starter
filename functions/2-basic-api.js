@@ -1,7 +1,4 @@
-const items = [
-    {name: 'susan'},
-    {name: 'ana'}
-]
+const items = require('../assets/data')
 
 exports.handler = async (event, context, cb) => {
     return {
