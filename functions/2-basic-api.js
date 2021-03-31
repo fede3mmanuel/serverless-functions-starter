@@ -1,6 +1,11 @@
+const items = [
+    {name: 'susan'},
+    {name: 'ana'}
+]
+
 exports.handler = async (event, context, cb) => {
     return {
         statusCode: 200,
-        body: 'Our basic API example'
+        body: JSON.stringify(items)
     }
 }
