@@ -1,5 +1,6 @@
 const result = document.querySelector('.result');
 
+
 const fetchProduct = async () =>{
     result.innerHTML = '<h2>Loading...</h2>'
     try {
